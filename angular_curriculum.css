@@ -1,0 +1,84 @@
+body{
+    min-height: 100vh;
+    margin: 0px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    background-color: aqua;
+    font-size: 25px;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+}
+.list_center_ng-repeat{
+    display: flex;
+    background-color: darkkhaki;
+    font-size: 25px;
+    width: 100%;
+    height: 40%;
+    justify-content: flex-start;
+    align-items: center;
+    font-family:sans-serif;
+    overflow-y: scroll;
+}
+.list_changes{
+    margin: 5px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1230px;
+    height: 30%;
+    background-color: yellowgreen;
+    border: 3px solid white;
+    border-style: dotted;
+}
+.list_changes:hover{
+    cursor: pointer;
+}
+.user_interface{
+    display: flex;
+    background-color: fuchsia;
+    height: 30%;
+    font-family:cursive;
+}
+.input{
+    flex: 1;
+    background-color: blueviolet;
+    font-size: 30px;
+}
+.onadd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 30px;
+}
+.onadd:hover {
+    cursor: pointer;
+}
+li{
+    display:inline-block;
+    vertical-align: middle;
+}
+/*
+.shivam {
+    color:blue;
+}
+.inline_text{
+    color:orangered;
+}
+.inline_text1{
+    text-decoration: line-through;
+}*/
+
+
+.state-true {
+    text-decoration: line-through;
+}

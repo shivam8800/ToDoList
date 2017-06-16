@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>angular_curriculum_frontend_page</title>
+        <link rel="stylesheet" href="angular_curriculum.css"/>
+        <script type ="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="angular_curriculum.js"></script>
+    </head>
+    <body>
+        <div class="flex-container" ng-app ="to_do_app" ng-controller ="app_working">
+            <div class="header">
+                <p>You've got {{length}} things to do</p>
+            </div>
+            <div class="list_center_ng-repeat">
+                <ul style="list-style-type:none">
+                  <div class="list_changes" ng-click ="changeclass(name)" ng-repeat ="name in nameList">
+                    <input type="checkbox">
+                    <li class = "state-{{ name.done }}">{{name.name}}</li>
+                  </div>
+                </ul>
+            </div>
+            <div class="user_interface">
+                <input  type="text" class="input" placeholder="write here" ng-model ="value_input">
+                <div class="onadd" ng-click ="append()" ng-keydown ="append()">ADD</div>
+            </div>
+        </div>
+    </body>
+</html>
